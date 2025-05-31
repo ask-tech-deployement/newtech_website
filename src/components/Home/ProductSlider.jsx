@@ -13,7 +13,7 @@ const ProductSlider = ({ title, categoryid }) => {
 
   const getAllProducts = async () => {
     try {
-      const res = await axios.get(`GetProductByCatgory/${categoryid}/0`);
+      const res = await  axios.get(`/Master/Products/GetProductByCatgory//${categoryid}/0`) ;
       setProducts(res.data);
     } catch (e) {
       console.log(e.message);

@@ -29,7 +29,7 @@ const Product = () => {
   const getProduct = async () => {
     try {
       const res = await axios.get(
-        `GetProductByCatgory/${mainCategoryId}/${subCategoryId}`
+        `/Master/Products/GetProductByCatgory/${mainCategoryId}/${subCategoryId}`
       );
       setProducts(res.data);
       setFilteredProducts(res.data);

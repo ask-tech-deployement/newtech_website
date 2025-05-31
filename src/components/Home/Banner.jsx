@@ -27,8 +27,8 @@ const Banner = () => {
 
   const getAllCategory = async () => {
     const [mainCat, subCat] = await Promise.all([
-      axios.get("GetAllactiveMainCategory"),
-      axios.get("/GetAllActiveSubCategory"),
+       axios.get("/Master/MainCategory/GetAllActiveMainCategory"),
+       axios.get("/Master/SubCategory/GetAllSubCategory"),
     ]);
     const allcategories = mainCat.data.map((mcat) => {
       const subCategories = subCat.data.filter(

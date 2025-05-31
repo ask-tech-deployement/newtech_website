@@ -105,7 +105,7 @@ const CartFormSection = () => {
         quantity: item.productQuantity,
         image:item.Image
       }));
-      await axios.post("/EmailOnEnquiry", { ...data, products });
+      await axios.post("/Login/EmailOnEnquiry", { ...data, products });
       setSuccessMessage(true);
       // toast.success("Enquiry submitted successfully!", {
       //   position: "top-right",

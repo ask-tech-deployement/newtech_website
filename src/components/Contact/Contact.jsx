@@ -79,7 +79,7 @@ const Contact = () => {
   const EmailOnEnquiry = async () => {
     setLoading(true);
     try {
-      const res = await axios.post("/EmailOnEnquiryForm", { ...data });
+      const res = await axios.post("/Login/EmailOnEnquiryForm", { ...data });
       console.log(res);
       setLoading(false);
       setSuccessMessage(true); // Show success message
@@ -112,7 +112,7 @@ const Contact = () => {
 
   // const EmailOnEnquiry = async () => {
   //   setLoading(true);
-  //   const res = await axios.post("/EmailOnEnquiryForm", { ...data });
+  //   const res = await axios.post("/Login/EmailOnEnquiryForm", { ...data });
   //   console.log(res);
   //   setLoading(false);
   // };
