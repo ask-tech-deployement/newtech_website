@@ -93,20 +93,21 @@ const Brands = () => {
           </div>
           <div className="top-brand__slider">
             <Slider {...settings}>
-              {times(155, (i) => (
+              {times(24, (i) => (
                 <div key={i}>
                   <div className="top-brand__item flex-center rounded-8 border border-gray-100 hover-border-gray-200 transition-1 px-8">
                     <img
                       src={`assets/images/brands/${i}.png`}
                       alt={`brand-${i}`}
                       className="sc-khLCKb eYtuVG"
+                     
                     />
                   </div>
                 </div>
               ))}
             </Slider>
           </div>
-          <BrandsSlideShow />
+          {/* <BrandsSlideShow /> */}
         </div>
       </div>
     </div>

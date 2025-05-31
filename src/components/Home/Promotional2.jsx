@@ -94,7 +94,7 @@ const Promotional2 = () => {
                   Material Handling Equipment
                 </h6>
                 <p className="mb-16">
-                  Enhance productivity with forklifts, pallet trucks, and
+                  Enhance productivity <br /> with forklifts, pallet <br /> trucks, and
                   warehouse essentials.
                 </p>
                 <Link

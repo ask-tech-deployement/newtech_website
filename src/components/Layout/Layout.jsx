@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <>
       <ColorInit color={true} />
-      <ScrollToTop smooth color="#FA6400" />
+      <ScrollToTop smooth color="#59b2de" />
       <Preloader />
       <Header />
       <Outlet />

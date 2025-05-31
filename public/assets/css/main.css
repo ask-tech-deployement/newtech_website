@@ -7853,6 +7853,7 @@ input:focus-visible {
 /* ============= Header Start Here ======================= */
 .header {
     transition: 0.2s linear;
+    background-color: #0373ad;
 }
 
 .header.fixed-header {
@@ -7884,12 +7885,12 @@ input:focus-visible {
 }
 
 .logo img {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 @media screen and (max-width: 424px) {
     .logo img {
-        max-width: 148px;
+        max-width: 250px;
     }
 }
 /* Header Menu and Submenu Css Start */
@@ -7928,7 +7929,7 @@ input:focus-visible {
 }
 
 .nav-menu__link {
-    color: var(--gray-400);
+    color: var(--gray-50);
     font-weight: 500;
     width: 100%;
     padding: 16px 0;
@@ -8137,7 +8138,7 @@ input:focus-visible {
 @media (min-width: 992px) {
     .category:hover .category__button {
         color: var(--main-600) !important;
-        background-color: var(--gray-50) !important;
+        /* background-color: var(--gray-50) !important; */
     }
 
     .category:hover .category__button .arrow-icon i::before {
@@ -8306,6 +8307,7 @@ input:focus-visible {
     background-color: hsl(var(--white));
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 0 5px grey;
 }
 
 .search-category.style-two .select2-container--default .select2-selection--single {
@@ -8342,8 +8344,8 @@ input:focus-visible {
     }
 
     .responsive-dropdown ul li.active > a {
-        background: var(--gray-50);
-        color: var(--gray-800) !important;
+        /* background: var(--gray-50); */
+        color: var(--main-400) !important;
         font-weight: 600;
     }
 
@@ -8379,6 +8381,7 @@ input:focus-visible {
 
     .responsive-dropdown .submenus-submenu__list li a {
         padding-left: 16px;
+       
     }
 
     .responsive-dropdown .submenus-submenu__list li a::before {
@@ -9217,9 +9220,9 @@ input:focus-visible {
 /* ======================= Newsletter Css End =========================== */
 /* Home Two Css Start */
 .color-two:root {
-    --main-h: 24;
-    --main-s: 100%;
-    --main-l: 49%;
+    --main-h: 200.47;
+    --main-s: 96.59%;
+    --main-l: 34.51%;
 }
 
 .color-two h1,

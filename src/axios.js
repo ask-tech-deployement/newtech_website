@@ -1,16 +1,13 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:1999/api"
-// const baseURL = "https://live.asktek.net/buroneed_manage_website_api/api";
+// DEV
+// const URL = "http://localhost:1999/api"
 
+// LIVE
+const URL = "https://live.asktek.net/website_manager_common_api";
 
-const ImageURL = "http://localhost:1999";
-
-// axios.defaults.logo = `${ImageURL}/Images/logo`;
-// axios.defaults.products = `${ImageURL}/Images`;
-
-export const imageURL = `${ImageURL}/Images`;
-
+const baseURL = `${URL}/api`;
+export const imageURL = `${URL}/Images`;
 export default axios.create({
   baseURL,
   headers: {

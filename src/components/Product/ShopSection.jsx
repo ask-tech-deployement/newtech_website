@@ -23,8 +23,8 @@ const ShopSection = ({ products }) => {
 
   const getAllCategory = async () => {
     const [mainCat, subCat] = await Promise.all([
-       axios.get("/Master/MainCategory/GetAllActiveMainCategory"),
-       axios.get("/Master/SubCategory/GetAllSubCategory"),
+      axios.get("/Master/MainCategory/GetAllactiveMainCategory"),
+      axios.get("/Master/SubCategory/GetAllActiveSubCategory"),
     ]);
     const allcategories = mainCat.data.map((mcat) => {
       const subCategories = subCat.data.filter(
@@ -55,10 +55,10 @@ const ShopSection = ({ products }) => {
     <section className="shop py-30">
       <div className="container container-lg">
         <div className="row">
-          <div className="col-md-3 col-12">
+          <div className="col-lg-3 col-12">
             <div className="w-265 d-lg-block d-none flex-shrink-0   ">
               <div className="responsive-dropdown style-two common-dropdown nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 position-relative border-top-0">
-                <ul className="responsive-dropdown__list scroll-sm p- py-8 overflow-y-auto ">
+                <ul className="responsive-dropdown__list scroll-sm py-8 overflow-y-auto ">
                   {categorys.map((mainCat) => (
                     <li
                       key={mainCat.MainCategory_Id}
@@ -66,7 +66,7 @@ const ShopSection = ({ products }) => {
                     >
                       <Link
                         // to={`/product/${mainCat.MainCategory_Id}/0`}
-                        className="text-gray-500 text-15 py-12 px-16 flex-align gap-8 rounded-0"
+                        className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0"
                       >
                         <span>{mainCat.MainCategory_Description}</span>
                         <span className="icon text-md d-flex ms-auto">
@@ -82,6 +82,7 @@ const ShopSection = ({ products }) => {
                             <li key={subcat.Category_Id}>
                               <Link
                                 to={`/product/${mainCat.MainCategory_Id}/${subcat.Category_Id}`}
+                                className="text-dark"
                               >
                                 {subcat.Category_Description}
                               </Link>
@@ -96,7 +97,7 @@ const ShopSection = ({ products }) => {
             </div>
           </div>
           {products.length !== 0 ? (
-            <div className="col-md-9 col-12 ">
+            <div className="col-lg-9 col-12 ">
               <div className="flex-between gap-16 flex-wrap mb-40">
                 <span className="text-gray-900">
                   {totalPages > 1 &&

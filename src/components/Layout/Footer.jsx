@@ -1,53 +1,62 @@
 import React from "react";
-import logo from "../../assets/header/footer-logo.png";
+import logo from "../../assets/header/logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
+import { phone1, phone2, email, address } from "../../utils";
 
 const Footer = () => {
   return (
     <footer className="footer py-40 mt-40 bg-color-one">
       <div className="container container-lg">
         <div className="footer-item-two-wrapper d-flex align-items-start flex-wrap justify-content-center">
-          <div className="footer-item max-w-275">
-            <div className="footer-item__logo">
+          <div className="footer-item max-w-300">
+            <div className="footer-item__logo text-center">
               <Link to="/">
                 {" "}
                 <img src={logo} alt="" style={{ mixBlendMode: "multiply" }} />
               </Link>
             </div>
-            <p className="mb-24">
-              Transform Your Space with the Best Housekeeping Essentials!
+            <p className="mb-24 fw-bold">
+            One Stop Shop for all your Office Needs 
             </p>
           </div>
 
-          <div className="footer-item" style={{maxWidth: "500px"}}>
-            <div className="flex-align gap-16 mb-16">
+          <div className="footer-item" style={{ maxWidth: "500px" }}>
+            <div
+              className="flex-align gap-16 mb-16 d-flex align-items-center"
+            >
               <FaPhoneAlt />
-              <a
-                href="tel:9741155473"
-                className="text-md text-gray-900 hover-text-main-600"
-              >
-                +91 97411 55473
-              </a>
+              <div className="d-flex gap-10 flex-column" style={{ flexWrap: "wrap" }}>
+                <a
+                  href={`tel:${phone1}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone1}
+                </a>
+                <a
+                  href={`tel:${phone2}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {phone2}
+                </a>
+               
+              </div>
             </div>
-            <div className="flex-align gap-16 mb-16" >
+            <div className="flex-align gap-16 mb-16">
               <MdEmail />
               <a
-                href="mailto:kishore@buroneed.com"
+                href={`mailto:${email}`}
                 className="text-md text-gray-900 hover-text-main-600"
               >
-                kishore@buroneed.com
+                {email}
               </a>
             </div>
             <div className="flex-align gap-16 mb-16">
               <FaLocationDot />
-              <span className="text-md text-gray-900">
-                No.11/14, Subbiah Reddy Block, Ulsoor, Bangalore - 560008 (Near
-                Lakshmi Market)
-              </span>
+              <span className="text-md text-gray-900">{address}</span>
             </div>
           </div>
 

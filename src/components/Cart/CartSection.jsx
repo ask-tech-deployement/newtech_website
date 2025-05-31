@@ -38,7 +38,7 @@ const CartSection = () => {
                   >
                     {Object.entries(cartItems)?.map(([key, value]) => (
                       <div
-                        className="d-flex align-items-start border-bottom p-10"
+                        className="d-flex align-items-start border-bottom p-10 "
                         key={key}
                       >
                         {/* Product Thumbnail */}

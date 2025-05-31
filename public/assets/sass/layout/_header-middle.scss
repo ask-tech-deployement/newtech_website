@@ -80,6 +80,7 @@
         background-color: hsl(var(--white));
         border-radius: 8px;
         overflow: hidden;
+        box-shadow: 0 0 5px grey;
         .select2-container--default .select2-selection--single {
             border-radius: 0;
             border-left: 0 !important;
@@ -98,8 +99,8 @@
         inset-inline-start: 0;
         inset-block-start: 0;
         visibility: visible;
-        opacity: 1;
         z-index:10;
+        opacity: 1;
         margin-top: 0;
         border-radius: 0;
         width: unset !important;
@@ -115,8 +116,8 @@
             li {
                 &.active {
                     > a {
-                        background: var(--gray-50);
-                        color: var(--gray-800) !important;
+                        // background: var(--gray-50);
+                        color: var(--main-400) !important;
                         font-weight: 600;
                         .icon {
                             transform: rotate(90deg);
@@ -125,6 +126,10 @@
                 }
                 a {
                     border-bottom: 1px solid var(--gray-100);
+                    background-color: var(--main-900);
+                    &:hover{
+                        background-color: var(--main-900);
+                    }
                 }
             }
         }

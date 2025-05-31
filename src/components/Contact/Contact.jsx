@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
+import { phone1, phone2, email, address } from "../../utils";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -150,7 +151,7 @@ const Contact = () => {
                     <input
                       type="text"
                       className="common-input px-16"
-                      style={{borderColor:!!errors.name?'red':'#E6E6E6'}}
+                      style={{ borderColor: !!errors.name ? "red" : "#E6E6E6" }}
                       id="name"
                       name="name"
                       placeholder="Full name"
@@ -158,9 +159,11 @@ const Contact = () => {
                       onChange={handleDataChange}
                       onFocus={handleFocus}
                     />
-                   {errors.name &&  <p className="form-text text-danger position-absolute text-xs mt-0">
-                      {errors.name}
-                    </p>}
+                    {errors.name && (
+                      <p className="form-text text-danger position-absolute text-xs mt-0">
+                        {errors.name}
+                      </p>
+                    )}
                   </div>
                   <div className="col-sm-6 col-xs-6">
                     <label
@@ -174,7 +177,9 @@ const Contact = () => {
                     </label>
                     <input
                       type="email"
-                      style={{borderColor:!!errors.email?'red':'#E6E6E6'}}
+                      style={{
+                        borderColor: !!errors.email ? "red" : "#E6E6E6",
+                      }}
                       className="common-input px-16"
                       id="email"
                       name="email"
@@ -183,9 +188,11 @@ const Contact = () => {
                       onChange={handleDataChange}
                       onFocus={handleFocus}
                     />
-                    {errors.email && <p className="form-text text-danger position-absolute text-xs mt-0">
-                      {errors.email}
-                    </p>}
+                    {errors.email && (
+                      <p className="form-text text-danger position-absolute text-xs mt-0">
+                        {errors.email}
+                      </p>
+                    )}
                   </div>
                   <div className="col-sm-6 col-xs-6">
                     <label
@@ -199,7 +206,9 @@ const Contact = () => {
                     </label>
                     <input
                       type="number"
-                      style={{borderColor:!!errors.phone?'red':'#E6E6E6'}}
+                      style={{
+                        borderColor: !!errors.phone ? "red" : "#E6E6E6",
+                      }}
                       className="common-input px-16"
                       id="phone"
                       name="phone"
@@ -208,9 +217,11 @@ const Contact = () => {
                       onChange={handleDataChange}
                       onFocus={handleFocus}
                     />
-                    {errors.phone && <p className="form-text text-danger position-absolute text-xs mt-0">
-                      {errors.phone}
-                    </p>}
+                    {errors.phone && (
+                      <p className="form-text text-danger position-absolute text-xs mt-0">
+                        {errors.phone}
+                      </p>
+                    )}
                   </div>
                   <div className="col-sm-6 col-xs-6">
                     <label
@@ -224,7 +235,9 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      style={{borderColor:!!errors.company?'red':'#E6E6E6'}}
+                      style={{
+                        borderColor: !!errors.company ? "red" : "#E6E6E6",
+                      }}
                       className="common-input px-16"
                       id="company"
                       name="company"
@@ -232,10 +245,12 @@ const Contact = () => {
                       onChange={handleDataChange}
                       onFocus={handleFocus}
                     />
-                    {errors.company && <p className="form-text text-danger position-absolute text-xs mt-0">
-                      {" "}
-                      {errors.company}
-                    </p>}
+                    {errors.company && (
+                      <p className="form-text text-danger position-absolute text-xs mt-0">
+                        {" "}
+                        {errors.company}
+                      </p>
+                    )}
                   </div>
                   <div className="col-sm-12">
                     <label
@@ -272,17 +287,31 @@ const Contact = () => {
           <div className="col-lg-4">
             <div className="contact-box border border-gray-100 rounded-16 px-24 py-40">
               <h6 className="mb-48">Get In Touch</h6>
-              <div className="flex-align gap-16 mb-16">
+              <div
+                className="flex-align gap-16 mb-16"
+                style={{ flexWrap: "wrap" }}
+              >
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                   <i className="ph-fill ph-phone-call" />
                 </span>
-                <a
-                  href="tel:+919741155473"
-                  className="text-md text-gray-900 hover-text-main-600"
+                <div
+                  className="d-flex gap-10 flex-column"
+                  style={{ flexWrap: "wrap" }}
                 >
-                  +91 97411 55473
-                </a>
-
+                  <a
+                    href={`tel:${phone1}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone1}
+                  </a>
+                  <a
+                    href={`tel:${phone2}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {phone2}
+                  </a>
+                  
+                </div>
                 {/* <Link
                   to="/tel:+00123456789"
                   
@@ -296,10 +325,10 @@ const Contact = () => {
                 </span>
 
                 <a
-                  href="mailto:kishore@buroneed.com"
+                  href={`mailto:${email}`}
                   className="text-md text-gray-900 hover-text-main-600"
                 >
-                  kishore@buroneed.com
+                  {email}
                 </a>
                 {/* <Link
                   to="mailto:kishore@buroneed.com"
@@ -312,10 +341,7 @@ const Contact = () => {
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
                   <i className="ph-fill ph-map-pin" />
                 </span>
-                <span className="text-md text-gray-900 ">
-                  No.11/14, Subbiah Reddy Block, Ulsoor, Bangalore - 560008
-                  (Near Lakshmi Market)
-                </span>
+                <span className="text-md text-gray-900 ">{address}</span>
               </div>
             </div>
             {/* <div className="mt-24 flex-align flex-wrap gap-16">

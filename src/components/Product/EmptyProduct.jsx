@@ -11,7 +11,7 @@ const EmptyProduct = () => {
       justifyContent="center"
       height="50vh"
       textAlign="center"
-      className="col-md-9 col-12"
+      className="col-lg-9 col-12"
     >
       {/* Cart Illustration */}
       <img

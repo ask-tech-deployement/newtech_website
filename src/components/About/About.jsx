@@ -6,124 +6,181 @@ import Brands from "../Home/Brands";
 const About = () => {
   return (
     <>
-      <section className="about-us-section py-48">
+      <section className="about-us-section py-40">
         <div className="container">
-          {/* Header */}
-          <div className="text-center mt-18 mb-56">
-            <h1 className="display-4 font-weight-bold">
-              ABOUT <span style={{ color: "blue" }}></span>BURONEED
-            </h1>
-            <p className="lead text-muted">
-              Complete Office Supplies Solutions
-            </p>
-            <p className="h5 text-muted mb-20">
-              Create a Creative Workspace With Us
-            </p>
-          </div>
-
-          {/* About Us Description */}
-          <div className="row mb-5">
-            <div className="col-lg-6">
-              <p className="lead text-dark">
-                Buroneeds is a leading workplace solutions provider based in
-                Bangalore, India. Our comprehensive services include office
-                supplies, cleaning, and hygiene products, cafeteria and eatable
-                items, printer and office machine consumables, crockery and
-                hotel ware products, electronic goods, and more. We are your
-                one-stop shop for all your office needs, serving business
-                houses, SMEs, IT/ITES, and manufacturing industries across
-                Bangalore.
-              </p>
-              <p className="lead text-dark">
-                We believe in providing our clients with excellent service,
-                never compromising on quality while offering competitive and
-                economically viable prices.
-              </p>
-              <p className="lead text-dark">
-                At Buroneeds, we leverage our years of industry experience to
-                provide seamless purchase solutions for offices across
-                Bangalore.
-              </p>
+          {/* Hero Section */}
+          <div className="row align-items-center mx-5 py-36 ">
+            <div className="col-lg-6 my-4 mb-lg-0">
+              <h5 className="font-weight-bold text-primary mb-3 flex-align-start">
+                About <span className="text-dark">NEWTECH  Inc</span>
+              </h5>
+              <h2 className="mb-3">
+                Your trusted partner for workplace solutions since 2017.
+              </h2>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 text-center">
               <img
                 src="https://buroneed.com/wp-content/uploads/2020/02/about-banner-01-2.jpg"
-                alt="About Us"
-                className="img-fluid rounded-52"
+                alt="About NEWTECH  Inc"
+                className="img-fluid rounded shadow"
+                style={{ maxHeight: "400px" }}
               />
             </div>
           </div>
-
-          {/* What Makes Us Unique */}
-          <div className="row my-56">
-            <div className="col-12 text-center">
-              <h2 className="text-dark font-weight-bold my-36 text-primary-400">
-                What Makes Us Unique
-              </h2>
-              <p className="h6 text-muted">
-                At Buroneed, we primarily focus on contributing to making our
-                planet healthier while thriving in the industry. We incorporate
-                eco-friendly & recycled products into our offerings. Our
-                end-to-end transparency and sustainable goals set us apart from
-                other companies in the industry.
-              </p>
-            </div>
+          <div className="p-10">
+            <p className="text-dark">
+              NEWTECH  Inc (MTI), established in 2017, is a leading supplier
+              of high-quality office supplies, pantry consumables, housekeeping
+              products, and equipment to the corporate world in Bangalore,
+              Chennai, and Mumbai. With over 30 years of combined experience,
+              our promoters have a deep understanding of the corporate supply
+              industry, enabling us to offer reliable and consistent service.
+              Our dedicated team, with over 40 years of collective experience,
+              ensures timely and efficient deliveries tailored to your needs.
+              Located in the heart of Bangalore's IT hubs, we serve key areas
+              like ITPL and Electronic City, providing swift service and quick
+              turnaround times. We also have a warehouse in SR Nagar, offering
+              easy access to our range of products. At MTI, we are committed to
+              making the lives of administrators and facilities managers easier
+              with quality products and dependable service, all backed by our
+              core values of integrity, reliability, and customer satisfaction.
+            </p>
           </div>
-
-          {/* Statistics and Collaborations */}
-          <div className="row text-center my-56">
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">250+</h3>
-                <p className="text-muted">Satisfied Clients</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">8+</h3>
-                <p className="text-muted">Years of Experience</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="stat-card p-4 rounded shadow-sm">
-                <h3 className="text-dark">Pan India</h3>
-                <p className="text-muted">Locations Served</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Meet The Team */}
-          <div className="row mb-5">
-            <div className="col-12 text-center">
-              <h2 className="text-dark font-weight-bold mb-3 text-warning-700">
-                Meet The Team
-              </h2>
-              <div className="team-member my-36 ">
-                <h4 className="text-dark font-weight-bold">
-                  Founder: Kishor Patel
+          {/* Vision & Mission */}
+          <div className="row gy-4 text-center my-36 ">
+            <div className="col-md-6">
+              <div className="card">
+                <h4 className="text-primary font-weight-bold mb-10">
+                  Our Vision
                 </h4>
                 <p className="text-muted">
-                  Kishor Patel, founder of Buroneed Supplies, with his 15+ years
-                  of experience in the corporate stationery industry, has made
-                  superior connections and brought Buroneed to where it is
-                  today.
-                </p>
-              </div>
-              <div className="team-member my-36">
-                <h4 className="text-dark font-weight-bold">
-                  Co-Founder: Vikas Patel
-                </h4>
-                <p className="text-muted">
-                  Vikas Patel, co-founder of Buroneed Supplies, with his 10+
-                  years of experience, has really accelerated Buroneed and made
-                  it deserving of its clients.
+                  Worry-free administrators and <br />
+                  facilities managers.
                 </p>
               </div>
             </div>
+            <div className="col-md-6">
+              <div className="card">
+                <h4 className="text-primary font-weight-bold mb-10">
+                  Our Mission
+                </h4>
+                <p className="text-muted">
+                  To provide honest, no-nonsense, timely, and consistent quality
+                  supplies for workplace needs, enabling peace of mind.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="card">
+                <h4 className="text-primary font-weight-bold mb-10">
+                  Why Choose NEWTECH  Inc?
+                </h4>
+                <p className="text-muted">
+                  Our innovative housekeeping chemicals, <br /> comparable to
+                  TASKI and 3M, can reduce <br /> your facilities management
+                  costs <br />
+                  by up to 30%.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="card">
+                <h4 className="text-primary font-weight-bold mb-10">
+                  Our Core Values
+                </h4>
+                <ul className="text-muted">
+                  <li>Integrity towards quality</li>
+                  <li>WYSIWYG – "What You Say is What You Get"</li>
+                  <li>Honest and consistent supplies</li>
+                  <li>Quick turnaround time for all orders</li>
+                  <li>Nationwide reach with PAN India supplies</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <Collabs />
+
+          <div className="text-center mb-5 my-40">
+            <h2 className="font-weight-bold text-primary mb-40">Our Team</h2>
+            <div className="row gy-4 justify-content-center text-center">
+              <div className="col-md-6">
+                <h4 className=" font-weight-bold mb-20">Founder : ?</h4>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                  officiis omnis culpa maxime facilis dolore laborum saepe quasi
+                  corporis, accusamus, ipsa excepturi dolorum eum expedita
+                  mollitia numquam ipsum beatae animi?
+                </p>
+              </div>
+              <div className="col-md-6">
+                <h4 className=" font-weight-bold mb-20">CEO : ?</h4>
+                <p className="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                  officiis omnis culpa maxime facilis dolore laborum saepe quasi
+                  corporis, accusamus, ipsa excepturi dolorum eum expedita
+                  mollitia numquam ipsum beatae animi?
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* Product Range */}
+          <div className="text-center mt-40">
+            <h2 className="font-weight-bold text-primary mb-40">
+              Our Product Range
+            </h2>
+            <div className="row gy-4 justify-content-center">
+              <div className="col-lg-4 col-sm-6">
+                <div className="card">
+                  <h4 className="text-dark mb-20">The Works (Stationery)</h4>
+                  <p className="text-muted">
+                    Papers, sticky notes, pens, printer cartridges, and more.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6">
+                <div className="card">
+                  <h4 className="text-dark mb-20">
+                    Shine & Bright (Housekeeping)
+                  </h4>
+                  <p className="text-muted">
+                    Cleaning chemicals, tissue products, and safety equipment.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-sm-6">
+                <div className="card">
+                  <h4 className="text-dark mb-20">Eat & Drink (Pantry)</h4>
+                  <p className="text-muted">
+                    Cookies, energy bars, soft drinks, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Statistics */}
+          <div className="row text-center gy-4 mt-10 justify-content-center">
+            <div className="col-lg-4 col-sm-6">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">250+</h2>
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">8+</h2>
+                <p>Years of Experience</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className="p-40 bg-secondary text-white rounded shadow-sm">
+                <h2 className="text-white">Pan India</h2>
+                <p>Locations Served</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <Collabs />
       <Brands />
     </>
   );

@@ -16,7 +16,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
 
   const getAllProducts = async () => {
     try {
-      const res = await  axios.get(`/Master/Products/GetProductByCatgory//${categoryid}/0`) ;
+      const res = await axios.get(`/Master/Products/GetProductByCatgory/${categoryid}/0`);
       setProducts(res.data);
     } catch (e) {
       console.log(e.message);
@@ -114,7 +114,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                       key={product.Product_Details_Id}
                       className="border border-gray-100 hover-border-main-600 rounded-16"
                     >
-                      <div className="col-xxl-6 ">
+                      <div className="col-xl-6 ">
                         <div className="">
                           <div className="mt-24 product-card d-flex gap-16 p-16 transition-2">
                             <img
@@ -123,11 +123,16 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                                   ? `${imageURL}/${product.Image}`
                                   : noimg
                               }
-                              style={{ objectFit: "contain", maxHeight:'180px' }}
+                              style={{
+                                objectFit: "contain",
+                                maxHeight: "200px",
+                              }}
                             />
                             <div className="product-card__content my-20 flex-grow-1">
                               <h6 className="title text-lg fw-semibold mb-12 text-line-2">
+                                
                                   {product.Product_Details_Description}
+                  
                               </h6>
 
                               <div className="product-card__price mt-14">
@@ -148,7 +153,7 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                       key={product.Product_Details_Id}
                       className="border border-gray-100 hover-border-main-600 rounded-16"
                     >
-                      <div className="col-xxl-6 ">
+                      <div className="col-xl-6 ">
                         <div className="">
                           <div className="mt-24 product-card d-flex gap-16 p-16    transition-2">
                             <img
@@ -157,10 +162,13 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                                   ? `${imageURL}/${product.Image}`
                                   : noimg
                               }
-                              style={{ objectFit: "contain", maxHeight:'180px' }}
+                              style={{
+                                objectFit: "contain",
+                                maxHeight: "200px",
+                              }}
                             />
                             <div className="product-card__content my-20 flex-grow-1">
-                              <h6 className="title text-lg fw-semibold mb-12 text-line-2">
+                              <h6 className="title text-lg fw-semibold mb-12 text-line-2">                             
                                   {product.Product_Details_Description}
                               </h6>
 
@@ -192,7 +200,6 @@ const FeaturedOneHome = ({ title, categoryid }) => {
                 <Link
                   to={`/product/${categoryid}/0`}
                   className="mt-16 mb-24 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
-                  tabIndex={0}
                 >
                   Discover Now
                   <span className="icon text-xl d-flex">

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/header/footer-logo.png";
+import logo from "../../assets/header/logo.png";
 
 const BottomFooter = () => {
   return (
@@ -9,11 +9,11 @@ const BottomFooter = () => {
           <p className="bottom-footer__text text-center text-13">
             © Copyright 2024.
             <a
-              href="https://live.asktek.net/buroneed_manage_website_ui"
+              href="https://live.asktek.net/megatrade_manage_website_ui"
               target="_blank"
               rel="noreferrer"
             >
-              Buroneed.{" "}
+              NEWTECH .{" "}
             </a>
             All rights reserved. | Designed and developed by{" "}
             <a
@@ -21,7 +21,7 @@ const BottomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              ASK Technologies
+              Ask Technology
             </a>
           </p>
         </div>

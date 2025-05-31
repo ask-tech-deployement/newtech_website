@@ -1,7 +1,23 @@
 /* ============= Header Start Here ======================= */
 .header {
-    transition: .2s linear;
+    // transition: .2s linear;
+    background-color: #0373ad;
+    // &.fixed-header {
+    //     position: fixed;
+    //     inset-inline-start: 0;
+    //     inset-block-start: 0;
+    //     inset-inline-end: 0;
+    //     width: 100%;
+    //     z-index: 8;
+    //     backdrop-filter: blur(24px);
+    //     animation: slideDown 0.35s ease-out;    
+    //     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    //     @include md-screen {
+    //         inset-block-start: -1px;
+    //     }
+    // }
 }
+
 
 .full-header{
     transition: .2s linear;
@@ -11,7 +27,7 @@
         inset-block-start: 0;
         inset-inline-end: 0;
         width: 100%;
-        z-index: 7;
+        z-index: 8;
         backdrop-filter: blur(24px);
         animation: slideDown 0.35s ease-out;    
         box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
@@ -32,9 +48,9 @@
 
 .logo {
     img {
-        max-width: 200px;
+        max-width: 250px;
         @include xsm-screen {
-            max-width: 148px;
+            max-width: 250px;
         }
     }
 }
@@ -67,7 +83,7 @@
         }
     }
     &__link {
-        color: var(--gray-400);
+        color: var(--gray-50);
         font-weight: 500;
         width: 100%;
         padding: 16px 0;
@@ -129,7 +145,7 @@
     @extend .box-shadow-lg; 
     inset-block-start: 100%;
     width: max-content;
-    background-color: hsl(var(--white));
+    background-color: var(--main-900);
     border-radius: 6px;
     min-width: 190px;
     overflow: hidden;
@@ -207,7 +223,7 @@
                 padding: 10px 16px;
                 padding-inline-start: 32px;
                 display: block;
-                color: var(--gray-500);
+                color: white;
                 position: relative;
                 &::before {
                     position: absolute;
@@ -263,8 +279,8 @@
     @media (min-width: 992px) {
         &:hover {
             .category__button {
-                color: var(--main-600) !important;
-                background-color: var(--gray-50) !important;
+                color: var(--main-400) !important;
+                // background-color: var(--gray-50) !important;
                 .arrow-icon i::before {
                     content: "\E13C";
                 }
@@ -313,5 +329,7 @@
         border-bottom: 0 !important;
     }
 }
+
+
 
 /* ================================= Header Css End =========================== */

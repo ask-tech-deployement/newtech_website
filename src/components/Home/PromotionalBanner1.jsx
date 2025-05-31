@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ppe1 from "../../assets/banner/ppe1.png";
-import ppe2 from "../../assets/banner/ppe.png";
+import computer from "../../assets/banner/computer.png";
 
 const PromotionalBanner1 = () => {
   return (
@@ -17,12 +17,12 @@ const PromotionalBanner1 = () => {
             <img src={ppe1} alt="" />
           </div>
           <div className="day-sale-box__content d-block w-100 text-start py-32 ps-lg-0 ps-24">
-            <h3 className="text-white fw-medium mb-24">STAY PROTECTED</h3>
+            <h3 className="text-white fw-medium mb-24">STAY EQUIPPED </h3>
             <h6 className="text-white fw-medium mb-8">
-              ESSENTIAL PPE EQUIPMENT
+              ESSENTIAL STATIONARY ITEMS
             </h6>
             <h6 className="text-white fw-medium mb-0">
-              MASKS, GLOVES, FACE SHIELDS &amp; MORE
+              NOTE & BOOKS, PEN & PENCIL , MORE
             </h6>
             <Link
               to="/product/10012/0"
@@ -33,7 +33,7 @@ const PromotionalBanner1 = () => {
             </Link>
           </div>
           <div className="d-md-block d-none pe-xxl-5 pe-md-4">
-            <img src={ppe2} alt="" />
+            <img src={computer} alt="" />
           </div>
         </div>
       </div>

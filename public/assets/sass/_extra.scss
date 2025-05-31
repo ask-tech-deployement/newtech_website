@@ -693,7 +693,7 @@
 }
 
 .nav-menu__link.activePage {
-  color: hsl(var(--main));
+  color:var(--main-400);
 }
 
 .category-two {
@@ -768,7 +768,6 @@
     }
   }
 }
-
 
 .testimonials {
   .slick-arrow.slick-prev {
