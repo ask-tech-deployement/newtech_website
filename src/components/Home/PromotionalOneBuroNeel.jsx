@@ -9,17 +9,17 @@ const PromotionalOneBuroNeel = () => {
           <div className="col-xl-3 col-sm-6 col-xs-6">
             <div className="promotional-banner-item position-relative rounded-24 overflow-hidden z-1">
               <img
-                src="assets/images/thumbs/promotional-banner-img1.png"
+                src="assets/images/thumbs/2.png"
                 alt="Office Stationery Items"
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Office Stationery Items
+                  Printer Ink Cartridges
                 </h6>
                 <Link
                   to="/product/1/2"
-                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -32,17 +32,17 @@ const PromotionalOneBuroNeel = () => {
           <div className="col-xl-3 col-sm-6 col-xs-6">
             <div className="promotional-banner-item position-relative rounded-24 overflow-hidden z-1">
               <img
-                src="assets/images/thumbs/promotional-banner-img2.png"
+                src="assets/images/thumbs/4.png"
                 alt="Cleaning Products Range"
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Cleaning Products Range
+                  File Storage Solutions
                 </h6>
                 <Link
                   to="/product/10009/20010"
-                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -55,17 +55,17 @@ const PromotionalOneBuroNeel = () => {
           <div className="col-xl-3 col-sm-6 col-xs-6">
             <div className="promotional-banner-item position-relative rounded-24 overflow-hidden z-1">
               <img
-                src="assets/images/thumbs/promotional-banner-img3.png"
+                src="assets/images/thumbs/6.png"
                 alt="Kitchen Pantry Supplies"
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Kitchen Pantry Supplies
+                  Computer Accessories
                 </h6>
                 <Link
                   to="/product/2/10003"
-                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">
@@ -78,17 +78,17 @@ const PromotionalOneBuroNeel = () => {
           <div className="col-xl-3 col-sm-6 col-xs-6">
             <div className="promotional-banner-item position-relative rounded-24 overflow-hidden z-1">
               <img
-                src="assets/images/thumbs/promotional-banner-img4.png"
+                src="assets/images/thumbs/8.png"
                 alt="Corporate Gifting Solutions"
                 className="position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 object-fit-cover z-n1"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title text-32">
-                  Corporate Gifting Solutions
+                  Paper Products
                 </h6>
                 <Link
                   to="/product/10011/20013"
-                  className="btn btn-main d-inline-flex align-items-center rounded-pill gap-8 mt-24"
+                  className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
                   <span className="icon text-xl d-flex">

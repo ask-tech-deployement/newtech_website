@@ -88,7 +88,8 @@ a {
   color: var(--main-900);
 }
 a:hover {
-  color: var(--main-400) !important ;
+  // color: var(--main-400) !important ;  
+  color: rgb(173, 169, 224) !important ;  
 }
 img {
   max-width: 100%;

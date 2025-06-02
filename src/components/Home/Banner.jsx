@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Image1 from "../../assets/banner/banner-img1.png";
 import Image3 from "../../assets/banner/banner-img3.png";
-import Image4 from "../../assets/banner/banner-img6.png";
+import Image4 from "../../assets/banner/snacks.png";
 import axios from "../../axios";
 
 const Banner = () => {
@@ -42,8 +42,14 @@ const Banner = () => {
     <div className="banner-two">
       <div className="container container-lg">
         <div className="banner-two-wrapper d-flex align-items-start">
-          <div className="w-265 d-lg-block d-none flex-shrink-0   ">
-            <div className="responsive-dropdown style-two common-dropdown nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 position-relative border-top-0">
+          <div
+            className="w-265 d-lg-block d-none flex-shrink-0   "
+            style={{ backgroundColor: "#12324f" }}
+          >
+            <div
+              className="responsive-dropdown style-two common-dropdown nav-submenu p-0 submenus-submenu-wrapper shadow-none border border-gray-100 position-relative border-top-0"
+              style={{ backgroundColor: "#12324f" }}
+            >
               <button
                 type="button"
                 className="close-responsive-dropdown rounded-circle text-xl position-absolute inset-inline-end-0 inset-block-start-0 mt-4 me-8 d-lg-none d-flex"
@@ -105,20 +111,45 @@ const Banner = () => {
             className="mt-20 rounded-24 overflow-hidden position-relative arrow-center flex-grow-1 mx-10 0 "
           >
             <img
-              src="assets/images/bg/banner-two-bg.png"
+              src="assets/images/bg/newtech.jpeg"
               alt=""
               className="banner-img position-absolute inset-block-start-0 inset-inline-start-0 w-100 h-100 z-n1 object-fit-cover rounded-24"
             />
             <div className="banner-item-two__slider">
               <Slider {...settings}>
+                {/* Stationery */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Clean Smarter, Not Harder
+                       Smart Stationery for Workspaces
                     </h2>
                     <p className="text-white mb-8">
-                      Discover our premium cleaning solutions designed to boost
-                      productivity and well-being in your workplace.
+                      500+ stationery items from top brands. Custom corporate
+                      kits available with your logo.
+                    </p>
+                    <Link
+                      to="/product/10012/0"
+                      className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
+                    >
+                      Explore
+                      <span className="icon text-xl d-flex">
+                        <i className="ph ph-shield-check" />
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="banner-item-two__thumb position-absolute bottom-0">
+                    <img src={Image4} alt="PPE Consumables" />
+                  </div>
+                </div>
+                {/* {/*   Premium Toner & Ink Solutions 1/} */}
+                <div className="banner-item-two">
+                  <div className="banner-item-two__content">
+                    <h2 className="banner-item-two__title bounce text-white">
+                      Premium Toner & Ink Solutions
+                    </h2>
+                    <p className="text-white mb-8">
+                      Keep your office running smoothly with genuine HP, Canon,
+                      and Samsung cartridges. High-quality prints, every time!
                     </p>
                     <Link
                       to="/product/10009/0"
@@ -135,16 +166,15 @@ const Banner = () => {
                   </div>
                 </div>
 
-                {/* New Slide 1: Corporate Gifting & Promotions */}
+                {/* New Slide 1: Professional Cleaning Supplies */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Corporate Gifting & Promotions
+                      Professional Cleaning Supplies
                     </h2>
                     <p className="text-white mb-8">
-                      Boost your brand's image with exceptional corporate
-                      giveaways and branding solutions that leave a lasting
-                      impact.
+                      Elevate hygiene with Diversey chemicals, microfiber mops,
+                      and automated dispensers for a spotless workplace.
                     </p>
                     <Link
                       to="/product/10011/0"
@@ -162,16 +192,15 @@ const Banner = () => {
                 </div>
 
                 {/* New Slide 2: Eat  */}
-                <div className="banner-item-two">
+                {/* <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Snack, Sip, and Smile!
+                      Office Productivity Starts Here
                     </h2>
                     <p className="text-white mb-8">
-                      Delight your team with a variety of pantry essentials,
-                      from cookies and biscuits to energy bars, soft drinks,
-                      juices, and water—everything you need to keep taste buds
-                      satisfied and energy levels high in the office.
+                      From Reynolds pens to 3M sticky notes, we’ve got
+                      everything to power your office’s creativity and
+                      organization.
                     </p>
                     <Link
                       to="/product/10012/0"
@@ -186,7 +215,7 @@ const Banner = () => {
                   <div className="banner-item-two__thumb position-absolute bottom-0">
                     <img src={Image4} alt="PPE Consumables" />
                   </div>
-                </div>
+                </div> */}
               </Slider>
             </div>
           </div>

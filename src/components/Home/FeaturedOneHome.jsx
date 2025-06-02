@@ -194,14 +194,14 @@ const FeaturedOneHome = ({ title, categoryid }) => {
               />
               <div className="py-xl-4 text-center">
                 <span className="h6 mb-20 text-white">
-                  Premium Office Furniture Collections
+                  Smart Stationery, Smarter Offices
                 </span>
 
                 <Link
                   to={`/product/${categoryid}/0`}
                   className="mt-16 mb-24 btn btn-main-two fw-medium d-inline-flex align-items-center rounded-pill gap-8"
                 >
-                  Discover Now
+                  Explore Now
                   <span className="icon text-xl d-flex">
                     <i className="ph ph-arrow-right" />
                   </span>

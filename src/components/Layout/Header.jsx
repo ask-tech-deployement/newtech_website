@@ -123,26 +123,31 @@ const Header = () => {
         style={{ backgroundColor: "rgb(60, 124, 75)" }}
       >
         <li>
-          <FaPhoneAlt style={{color:'white'}} />
-          <a href={`tel:${phone1}`} style={{color:'white'}}>{phone1}</a> |{" "}
-          <a href={`tel:${phone2}`} style={{color:'white'}}>{phone2}</a>
+          <FaPhoneAlt style={{ color: "white" }} />
+          <a href={`tel:${phone1}`} style={{ color: "white" }}>
+            {phone1}
+          </a>{" "}
+          |{" "}
+          <a href={`tel:${phone2}`} style={{ color: "white" }}>
+            {phone2}
+          </a>
         </li>
         <li>
-          <a href={`mailto:${email}`} style={{color:'white'}}>
+          <a href={`mailto:${email}`} style={{ color: "white" }}>
             <MdEmail /> {email}
           </a>
         </li>
         <li className="d-flex gap-10">
-          <a href="#" style={{color:'white'}}>
+          <a href="#" style={{ color: "white" }}>
             <FaXTwitter />
           </a>
-          <a href="#" style={{color:'white'}}>
+          <a href="#" style={{ color: "white" }}>
             <FaFacebookF />
           </a>
-          <a href="#" style={{color:'white'}}>
+          <a href="#" style={{ color: "white" }}>
             <FaLinkedinIn />
           </a>
-          <a href="#" style={{color:'white'}}>
+          <a href="#" style={{ color: "white" }}>
             <BsInstagram />
           </a>
         </li>
@@ -379,7 +384,7 @@ const Header = () => {
                     <button
                       onClick={handleClickFilter}
                       type="button"
-                      className="bg-main-two-600 flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none"
+                      className="bg-success flex-center text-xl text-white flex-shrink-0 w-48 hover-bg-main-two-700 d-lg-flex d-none"
                     >
                       <i className="ph ph-magnifying-glass" />
                     </button>
@@ -427,7 +432,10 @@ const Header = () => {
         </header>
         {/* ======================= Middle Header Two End ========================= */}
         {/* ==================== Header Two Start Here ==================== */}
-        <header className="header border-bottom border-gray-100 ">
+        <header
+          className="header border-bottom border-gray-100 "
+          style={{ backgroundColor: "#12324f" }}
+        >
           <div className="container container-lg">
             <nav className="header-inner d-flex justify-content-between gap-8">
               <div className="flex-align menu-category-wrapper">
@@ -445,17 +453,18 @@ const Header = () => {
                 </div>
                 <div
                   className={`category main  on-hover-item text-white d-block`}
+                  style={{ backgroundColor: "#12324f" }}
                 >
                   <button
                     type="button"
                     className="category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100  category-two text-white"
                   >
-                    <span className="icon text-2xl d-xs-flex d-none">
+                    <span className="icon text-2xl d-xs-flex d-none text-white">
                       <i className="ph ph-dots-nine" />
                     </span>
-                    <span className="d-sm-flex d-none">All</span> Categories
-                    <span className="arrow-icon text-xl d-flex">
-                      <i className="ph ph-caret-down" />
+                    <span className="d-sm-flex d-none text-white" >All Categories</span> 
+                    <span className="arrow-icon text-xl d-flex text-white">
+                      <i className="ph ph-caret-down text-white" />
                     </span>
                   </button>
                   <div className="responsive-dropdown on-hover-dropdown common-dropdown nav-submenu p-0 submenus-submenu-wrapper">
@@ -470,7 +479,7 @@ const Header = () => {
                         <img src={logo} alt="Logo" />
                       </Link>
                     </div>
-                    <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto">
+                    <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto" style={{ backgroundColor: "#12324f" }}>
                       {categorys.map((mainCat) => (
                         <li
                           key={mainCat.MainCategory_Id}
