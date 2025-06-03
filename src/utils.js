@@ -7,5 +7,5 @@ export const { phone1, phone2, landline1, landline2, email, website, address } =
     email: "sales@newtecheoffice.com",
     website: "www.newtecheoffice.com",
     address:
-      "NEWTECH E OFFICE SOLUTIONS, #14, Wood Street, Ashok Nagar, Richmond Road, Bengaluru – 560025. GSTIN: 29AIXPN3813H1ZP",
+      "NEWTECH E OFFICE SOLUTIONS, #14, Wood Street, Ashok Nagar, Richmond Road, Bengaluru – 560025. Karnataka, India",
   };

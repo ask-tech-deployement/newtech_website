@@ -14,13 +14,15 @@ const Home = () => {
     <>
       {/* <Preloader /> */}
       <Banner />
+      <ProductSlider title="Office Stationery" categoryid={1} />
+      <Promotional2 />
+      <ProductSlider title="Computer Accessories" categoryid={3} />
+      <PromotionalBanner1 />
+      <ProductSlider title="Computer Accessories" categoryid={3} />
       <PromotionalOneBuroNeel />
       <FeaturedOneHome title="Stationeries" categoryid={10015} />
-      <Promotional2 />
-      <ProductSlider title="Office Stationery" categoryid={1} />
-      <PromotionalBanner1 />
-      <Collabs />
       <ProductSlider title="Computer Accessories" categoryid={3} />
+      <Collabs />
       <Brands />
     </>
   );

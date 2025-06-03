@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+
+import BroucherFile from "../../assets/brochure/Newtech.pdf";
 import { BsInstagram } from "react-icons/bs";
 import { phone1, phone2, email, address } from "../../utils";
 
@@ -20,16 +22,17 @@ const Footer = () => {
               </Link>
             </div>
             <p className="mb-24 fw-bold">
-            One Stop Shop for all your Office Needs 
+              One Stop Shop for all your Office Needs
             </p>
           </div>
 
           <div className="footer-item" style={{ maxWidth: "500px" }}>
-            <div
-              className="flex-align gap-16 mb-16 d-flex align-items-center"
-            >
+            <div className="flex-align gap-16 mb-16 d-flex align-items-center">
               <FaPhoneAlt />
-              <div className="d-flex gap-10 flex-column" style={{ flexWrap: "wrap" }}>
+              <div
+                className="d-flex gap-10 flex-column"
+                style={{ flexWrap: "wrap" }}
+              >
                 <a
                   href={`tel:${phone1}`}
                   className="text-md text-gray-900 hover-text-main-600"
@@ -42,7 +45,6 @@ const Footer = () => {
                 >
                   {phone2}
                 </a>
-               
               </div>
             </div>
             <div className="flex-align gap-16 mb-16">
@@ -75,7 +77,9 @@ const Footer = () => {
               </li>
               <li className="mb-16">
                 <Link to="/#" className="text-gray-600 hover-text-main-600">
-                  Brochure
+                  <a href={BroucherFile} download>
+                    Brochure
+                  </a>
                 </Link>
               </li>
 

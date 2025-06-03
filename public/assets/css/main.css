@@ -5022,6 +5022,10 @@ input:focus-visible {
     color: hsl(var(--heading-color)) !important;
 }
 
+.text-heading2 {
+    color: white !important;
+}
+
 .text-body {
     color: hsl(var(--body-color)) !important;
 }
@@ -5095,7 +5099,8 @@ input:focus-visible {
 }
 
 .hover-text-main-two-600:hover {
-    color: var(--main-two-600) !important;
+    color  :white !important;
+    /* color: var(--main-two-600) !important; */
 }
 
 .hover-text-main-two-700:hover {

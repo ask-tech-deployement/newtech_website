@@ -9,6 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsInstagram } from "react-icons/bs";
 import { IoLogInOutline } from "react-icons/io5";
 import logo from "../../assets/header/logo.png";
+import BroucherFile from "../../assets/brochure/Newtech.pdf";
 import axios from "../../axios";
 import cartContext from "../Context/cartContext";
 import { phone1, phone2, email } from "../../utils";
@@ -247,14 +248,22 @@ const Header = () => {
                 onClick={() => handleMenuClick(2)}
                 className="nav-menu__item "
               >
-                <Link
+                {/* <Link
                   to="#"
+                  className={`nav-menu__link ${
+                    activeIndex === 2 ? "activePage" : ""
+                  }`}
+                > */}
+                <a
+                  href={BroucherFile}
+                  download
                   className={`nav-menu__link ${
                     activeIndex === 2 ? "activePage" : ""
                   }`}
                 >
                   Brochure
-                </Link>
+                </a>
+                {/* </Link> */}
               </li>
               <li onClick={() => handleMenuClick(3)} className="nav-menu__item">
                 <Link
@@ -462,7 +471,9 @@ const Header = () => {
                     <span className="icon text-2xl d-xs-flex d-none text-white">
                       <i className="ph ph-dots-nine" />
                     </span>
-                    <span className="d-sm-flex d-none text-white" >All Categories</span> 
+                    <span className="d-sm-flex d-none text-white">
+                      All Categories
+                    </span>
                     <span className="arrow-icon text-xl d-flex text-white">
                       <i className="ph ph-caret-down text-white" />
                     </span>
@@ -479,7 +490,10 @@ const Header = () => {
                         <img src={logo} alt="Logo" />
                       </Link>
                     </div>
-                    <ul className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto" style={{ backgroundColor: "#12324f" }}>
+                    <ul
+                      className="scroll-sm p-0 py-8 w-300 max-h-400 overflow-y-auto"
+                      style={{ backgroundColor: "#12324f" }}
+                    >
                       {categorys.map((mainCat) => (
                         <li
                           key={mainCat.MainCategory_Id}
@@ -551,14 +565,22 @@ const Header = () => {
                       onClick={() => handleMenuClick(2)}
                       className="nav-menu__item"
                     >
-                      <Link
+                      {/* <Link
                         to="#"
+                        className={`nav-menu__link ${
+                          activeIndex === 2 ? "activePage" : ""
+                        }`}
+                      > */}
+                      <a
+                        href={BroucherFile}
+                        download
                         className={`nav-menu__link ${
                           activeIndex === 2 ? "activePage" : ""
                         }`}
                       >
                         Brochure
-                      </Link>
+                      </a>
+                      {/* </Link> */}
                     </li>
                     <li
                       onClick={() => handleMenuClick(3)}

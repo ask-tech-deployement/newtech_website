@@ -9,7 +9,7 @@ const PromotionalBanner1 = () => {
       <div className="container container-lg">
         <div className="day-sale-box rounded-16 overflow-hidden flex-between position-relative mb-24 z-1">
           <img
-            src="assets/images/bg/day-sale-bg.png"
+            src="assets/images/bg/3.png"
             alt=""
             className="position-absolute inset-block-start-0 inset-inline-start-0 z-n1 w-100 h-100 cover-img"
           />
@@ -17,12 +17,12 @@ const PromotionalBanner1 = () => {
             <img src={ppe1} alt="" />
           </div>
           <div className="day-sale-box__content d-block w-100 text-start py-32 ps-lg-0 ps-24">
-            <h3 className="text-white fw-medium mb-24">STAY EQUIPPED </h3>
+            <h3 className="text-white fw-medium mb-24">All-Day Stationery Needs </h3>
             <h6 className="text-white fw-medium mb-8">
-              ESSENTIAL STATIONARY ITEMS
+              Perfect Fit for School & Office Use
             </h6>
             <h6 className="text-white fw-medium mb-0">
-              NOTE & BOOKS, PEN & PENCIL , MORE
+              Books, Tags, Files, Boards, and More
             </h6>
             <Link
               to="/product/10012/0"

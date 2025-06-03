@@ -33,7 +33,6 @@ function App() {
       <CartContextProvider>
         <RouteScrollToTop />
         <PhosphorIconInit />
-
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
