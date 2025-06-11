@@ -10,6 +10,7 @@ import Brands from "./Brands";
 // import Preloader from "../../helper/Preloader";
 
 const Home = () => {
+  
   return (
     <>
       {/* <Preloader /> */}
@@ -22,7 +23,7 @@ const Home = () => {
       <PromotionalOneBuroNeel />
       <FeaturedOneHome title="Stationeries" categoryid={10015} />
       <ProductSlider title="Computer Accessories" categoryid={3} />
-      <Collabs />
+      {/* <Collabs /> */}
       <Brands />
     </>
   );

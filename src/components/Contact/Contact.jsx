@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { phone1, phone2, email, address } from "../../utils";
+import { phone1, phone2,landline1,landline2, email, address } from "../../utils";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -136,7 +136,7 @@ const Contact = () => {
           <div className="col-lg-8">
             <div className="contact-box border border-gray-100 rounded-16 px-24 py-40">
               <form action="#">
-                <h6 className="mb-32">Make Custom Request</h6>
+                <h6 className="mb-32">Coutact Us on Below</h6>
                 <div className="row gy-4">
                   <div className="col-sm-6 col-xs-6">
                     <label
@@ -311,13 +311,33 @@ const Contact = () => {
                     {phone2}
                   </a>
                   
-                </div>
-                {/* <Link
-                  to="/tel:+00123456789"
-                  
+                </div>                              
+              </div>
+              <div
+                className="flex-align gap-16 mb-16"
+                style={{ flexWrap: "wrap" }}
+              >                
+                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-success text-2xl flex-shrink-0">
+                  <i className="ph-fill ph-whatsapp-logo" />
+                </span>
+                <div
+                  className="d-flex gap-10 flex-column"
+                  style={{ flexWrap: "wrap" }}
                 >
-                  +91 974 115 5473
-                </Link> */}
+                  <a
+                    href={`tel:${landline1}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {landline1}
+                  </a>
+                  <a
+                    href={`tel:${landline2}`}
+                    className="text-md text-gray-900 hover-text-main-600"
+                  >
+                    {landline2}
+                  </a>
+                  
+                </div>               
               </div>
               <div className="flex-align gap-16 mb-16">
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">

@@ -6,15 +6,17 @@ import Footer from "./Footer";
 import ColorInit from "./ColorInit";
 import Preloader from "./Preloader";
 import Header from "./Header";
+import Whatsapp from "../Home/Whatsapp";
 
 const Layout = () => {
   return (
     <>
       <ColorInit color={true} />
-      <ScrollToTop smooth color="#59b2de" />
+      {/* <ScrollToTop smooth color="#59b2de" /> */}
       <Preloader />
       <Header />
       <Outlet />
+      <Whatsapp />
       <Footer />
       <BottomFooter />
     </>

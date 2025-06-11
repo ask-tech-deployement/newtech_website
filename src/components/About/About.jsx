@@ -12,7 +12,7 @@ const About = () => {
         <div className="hero-container">
           <div className="hero-content">
             <h4 className="section-subtitle">
-              About <span>NewTech Office Solution</span>
+              About <span>NewTech E Office Solution</span>
             </h4>
             <h3 className="hero-title">
               Your trusted partner for corporate supplies since 2005
@@ -30,7 +30,7 @@ const About = () => {
         {/* Company Description */}
         <div className="company-description">
           <p>
-            NewTech Office Solution is a leading wholesale supplier of corporate
+            NewTech E Office Solution is a leading wholesale supplier of corporate
             stationery and housekeeping products, serving businesses since 2005.
             Founded by Mr. Navin Vaviya, a seasoned professional with over 20
             years of experience in the office supply industry, our company has
@@ -200,7 +200,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Collabs />
+      {/* <Collabs /> */}
       <Brands />
     </>
   );

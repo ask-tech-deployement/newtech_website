@@ -7,7 +7,14 @@ import { MdEmail } from "react-icons/md";
 
 import BroucherFile from "../../assets/brochure/Newtech.pdf";
 import { BsInstagram } from "react-icons/bs";
-import { phone1, phone2, email, address } from "../../utils";
+import {
+  phone1,
+  phone2,
+  landline1,
+  landline2,
+  email,
+  address,
+} from "../../utils";
 
 const Footer = () => {
   return (
@@ -27,8 +34,13 @@ const Footer = () => {
           </div>
 
           <div className="footer-item" style={{ maxWidth: "500px" }}>
-            <div className="flex-align gap-16 mb-16 d-flex align-items-center">
-              <FaPhoneAlt />
+            <div
+              className="flex-align gap-16 mb-16"
+              style={{ flexWrap: "wrap" }}
+            >
+              <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
+                <i className="ph-fill ph-phone-call" />
+              </span>
               <div
                 className="d-flex gap-10 flex-column"
                 style={{ flexWrap: "wrap" }}
@@ -44,6 +56,31 @@ const Footer = () => {
                   className="text-md text-gray-900 hover-text-main-600"
                 >
                   {phone2}
+                </a>
+              </div>
+            </div>
+            <div
+              className="flex-align gap-16 mb-16"
+              style={{ flexWrap: "wrap" }}
+            >
+              <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-success text-2xl flex-shrink-0">
+                <i className="ph-fill ph-whatsapp-logo" />
+              </span>
+              <div
+                className="d-flex gap-10 flex-column"
+                style={{ flexWrap: "wrap" }}
+              >
+                <a
+                  href={`tel:${landline1}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {landline1}
+                </a>
+                <a
+                  href={`tel:${landline2}`}
+                  className="text-md text-gray-900 hover-text-main-600"
+                >
+                  {landline2}
                 </a>
               </div>
             </div>

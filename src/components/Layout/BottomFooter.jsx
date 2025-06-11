@@ -13,7 +13,7 @@ const BottomFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Newtech Office Solutions .{" "}
+              Newtech E Office Solutions .{" "}
             </a>
             All rights reserved. | Designed and developed by{" "}
             <a href="https://asktek.net/" target="_blank" rel="noreferrer">
