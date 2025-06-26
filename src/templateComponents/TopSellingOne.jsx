@@ -12,7 +12,7 @@ const TopSellingOne = ({title,categoryid}) => {
 
   const getAllProducts = async () => {
     try {
-      const res = await axios.get(`GetProductByCatgory/${categoryid}`);
+      const res = await axios.get(`/Master/Products/GetProductByCatgory/${categoryid}`);
       setProducts(res.data);
     } catch (e) {
       console.log(e.message);
