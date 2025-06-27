@@ -18,7 +18,7 @@ const PromotionalOneBuroNeel = () => {
                   Printer Ink Cartridges
                 </h6>
                 <Link
-                  to="/product/1/2"
+                  to="/product/2/0"
                   className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
@@ -41,7 +41,7 @@ const PromotionalOneBuroNeel = () => {
                   File Storage Solutions
                 </h6>
                 <Link
-                  to="/product/10009/20010"
+                  to="/product/5/0"
                   className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
@@ -64,7 +64,7 @@ const PromotionalOneBuroNeel = () => {
                   Computer Accessories
                 </h6>
                 <Link
-                  to="/product/2/10003"
+                  to="/product/3/0"
                   className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore
@@ -87,7 +87,7 @@ const PromotionalOneBuroNeel = () => {
                   Paper Products
                 </h6>
                 <Link
-                  to="/product/10011/20013"
+                  to="/product/4/0"
                   className="btn btn-black d-inline-flex align-items-center rounded-pill gap-8 mt-24"
                 >
                   Explore

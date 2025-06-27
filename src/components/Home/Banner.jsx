@@ -128,7 +128,7 @@ const Banner = () => {
                       kits available with your logo.
                     </p>
                     <Link
-                      to="/product/10012/0"
+                      to="/product/6/0"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Explore
@@ -152,7 +152,7 @@ const Banner = () => {
                       and Samsung cartridges. High-quality prints, every time!
                     </p>
                     <Link
-                      to="/product/10009/0"
+                      to="/product/1/0"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Shop Now
@@ -165,7 +165,6 @@ const Banner = () => {
                     <img src={Image1} alt="Premium Cleaning Solutions" />
                   </div>
                 </div>
-
                 {/* New Slide 1: Professional Cleaning Supplies */}
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
@@ -177,7 +176,7 @@ const Banner = () => {
                       and automated dispensers for a spotless workplace.
                     </p>
                     <Link
-                      to="/product/10011/0"
+                      to="/product/11/0"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Explore More

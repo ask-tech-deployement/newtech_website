@@ -27,7 +27,7 @@ const Promotional2 = () => {
                   and teams.
                 </p>
                 <Link
-                  to="/product/10013/0"
+                  to="/product/5/0"
                   className="d-inline-flex align-items-center gap-8 text-bg-warning p-1 rounded-8 border-start text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-light-700 hover-border-main-two-600"
                 >
                   Explore Now
@@ -62,7 +62,7 @@ const Promotional2 = () => {
                   bulk orders, and branding.
                 </p>
                 <Link
-                  to="/product/10014/"
+                  to="/product/9/0"
                   className="d-inline-flex align-items-center gap-8 text-bg-warning p-1  rounded-8 border-start text-md fw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-light-700 hover-border-main-two-600"
                 >
                   Explore Now
@@ -99,7 +99,7 @@ const Promotional2 = () => {
                   professional hygiene and restroom care.
                 </p>
                 <Link
-                  to="/product/10016/0"
+                  to="/product/11/0"
                   className="d-inline-flex align-items-center gap-8 text-bg-warning p-1  text-md  rounded-8 border-startfw-medium border border-top-0 border-end-0 border-start-0 border-gray-900 hover-text-light-700 hover-border-main-two-600"
                 >
                   Explore Now

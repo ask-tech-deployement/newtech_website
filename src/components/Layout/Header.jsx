@@ -212,7 +212,7 @@ const Header = () => {
           <i className="ph ph-x" />{" "}
         </button>
         <div className="mobile-menu__inner">
-          <Link to="/" className="mobile-menu__logo">
+          <Link to="/" className="mobile-menu__logo" style={{backgroundColor: "#fff"}}>
             <img src={logo} alt="Logo" />
           </Link>
           <div className="mobile-menu__menu">
@@ -404,7 +404,7 @@ const Header = () => {
               {/* Header Middle Right start */}
               <div className="header-right flex-align d-lg-block d-none">
                 <div className="header-two-activities flex-align flex-wrap gap-32">
-                  <Link
+                  {/* <Link
                     to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
                     className="flex-align flex-column gap-8 item-hover-two"
                     target="_blank"
@@ -415,7 +415,7 @@ const Header = () => {
                     <span className="text-md item-hover__text d-none d-lg-flex">
                       Login
                     </span>
-                  </Link>
+                  </Link> */}
                   <Link
                     to="/cart"
                     className="flex-align flex-column gap-8 item-hover-two"
@@ -614,7 +614,7 @@ const Header = () => {
                       </span>
                     </button>
 
-                    <Link
+                    {/* <Link
                       to="http://targetdemo.asktek.net/tompg.buroneed.webapp/"
                       className="flex-align flex-column gap-8 item-hover-two"
                     >
@@ -624,7 +624,7 @@ const Header = () => {
                       <span className="text-md text-white item-hover__text d-none d-lg-flex">
                         Login
                       </span>
-                    </Link>
+                    </Link> */}
 
                     <Link
                       to="/cart"

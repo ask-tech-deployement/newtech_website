@@ -10,19 +10,18 @@ import Brands from "./Brands";
 // import Preloader from "../../helper/Preloader";
 
 const Home = () => {
-  
   return (
     <>
       {/* <Preloader /> */}
       <Banner />
-      <ProductSlider title="Office Stationery" categoryid={1} />
+      <ProductSlider title="Office Stationery" categoryid={6} />
       <Promotional2 />
-      <ProductSlider title="Computer Accessories" categoryid={3} />
+      <ProductSlider title="Cleaning Supplies" categoryid={11} />
       <PromotionalBanner1 />
-      <ProductSlider title="Computer Accessories" categoryid={3} />
+      <ProductSlider title="Toners & Inks" categoryid={1} />
       <PromotionalOneBuroNeel />
-      <FeaturedOneHome title="Stationeries" categoryid={10015} />
-      <ProductSlider title="Computer Accessories" categoryid={3} />
+      <FeaturedOneHome title="Stationaries" categoryid={6} />
+      <ProductSlider title="Paper Products" categoryid={4} />
       {/* <Collabs /> */}
       <Brands />
     </>
