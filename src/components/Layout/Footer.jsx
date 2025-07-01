@@ -39,7 +39,7 @@ const Footer = () => {
               style={{ flexWrap: "wrap" }}
             >
               <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
-                <i className="ph-fill ph-phone-call" />
+                <i className="ph-fill ph-whatsapp-logo" />
               </span>
               <div
                 className="d-flex gap-10 flex-column"
@@ -64,7 +64,7 @@ const Footer = () => {
               style={{ flexWrap: "wrap" }}
             >
               <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-success text-2xl flex-shrink-0">
-                <i className="ph-fill ph-whatsapp-logo" />
+                <i className="ph-fill ph-phone-call" />
               </span>
               <div
                 className="d-flex gap-10 flex-column"
