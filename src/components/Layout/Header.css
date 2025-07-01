@@ -1,0 +1,16 @@
+/* If using regular CSS */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+}
+
+.rotate-0 {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}

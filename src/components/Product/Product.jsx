@@ -19,12 +19,12 @@ const Product = () => {
     const newProduct = !searchFilter
       ? products
       : products.filter((pro) =>
-          pro.Product_Details_Description?.toLowerCase()
-            ?.toLowerCase()
-            ?.includes(searchFilter?.toLowerCase())
+          pro.Product_Details_Description?.toLowerCase()?.includes(
+            searchFilter?.toLowerCase()
+          )
         );
     setFilteredProducts(newProduct);
-  }, [searchFilter,products]);
+  }, [searchFilter, products]);
 
   const getProduct = async () => {
     try {
@@ -40,8 +40,12 @@ const Product = () => {
 
   return (
     <>
-      <Breadcrumb title={"Products"} />
-      <ShopSection products={filteredProducts} />
+      <Breadcrumb title={"Our Products"} />
+      <ShopSection
+        products={filteredProducts}
+        mainCategoryId={mainCategoryId}
+        subCategoryId={subCategoryId}
+      />
     </>
   );
 };

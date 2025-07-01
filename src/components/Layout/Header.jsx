@@ -11,6 +11,7 @@ import { IoLogInOutline } from "react-icons/io5";
 import logo from "../../assets/header/logo.png";
 import BroucherFile from "../../assets/brochure/Newtech.pdf";
 import axios from "../../axios";
+import "./Header.css";
 import cartContext from "../Context/cartContext";
 import { phone1, phone2, email } from "../../utils";
 
@@ -70,6 +71,8 @@ const Header = () => {
     // Add a change event listener
     $selectElement.on("change", (e) => {
       setCategoryFilter(e.target.value);
+      navigate(`/product/${e.target.value}/0`);
+      console.log("selected value");
     });
 
     // Cleanup on unmount
@@ -89,6 +92,7 @@ const Header = () => {
   };
   const handleMenuToggle = () => {
     setMenuActive(!menuActive);
+    handleCategoryToggle();
   };
 
   // Search control support
@@ -99,10 +103,17 @@ const Header = () => {
 
   // category control support
   const [activeCategory, setActiveCategory] = useState(false);
+
   const handleCategoryToggle = () => {
     setActiveCategory(!activeCategory);
   };
+
   const [activeIndexCat, setActiveIndexCat] = useState(null);
+
+  // const handleCatClick = (index) => {
+  //   setActiveIndexCat(activeIndexCat === index ? null : index);
+  // };
+
   const handleCatClick = (index) => {
     setActiveIndexCat(activeIndexCat === index ? null : index);
   };
@@ -212,7 +223,11 @@ const Header = () => {
           <i className="ph ph-x" />{" "}
         </button>
         <div className="mobile-menu__inner">
-          <Link to="/" className="mobile-menu__logo" style={{backgroundColor: "#fff"}}>
+          <Link
+            to="/"
+            className="mobile-menu__logo"
+            style={{ backgroundColor: "#fff" }}
+          >
             <img src={logo} alt="Logo" />
           </Link>
           <div className="mobile-menu__menu">
@@ -295,13 +310,71 @@ const Header = () => {
         >
           <i className="ph ph-x text-white" />{" "}
         </button>
-        <div className="logo px-16 d-lg-none d-block text-center">
+        <div className="logo px-16 d-lg-none d-block text-center bg-body m-10 mt-20 rounded-11">
           <Link to="/" className="link">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" style={{ maxWidth: 200 }} />
           </Link>
         </div>
         <ul className="scroll-sm p-0 py-8 overflow-y-auto ">
           {categorys?.map((mcat) => (
+            <li
+              key={mcat.MainCategory_Id}
+              className={`has-submenus-submenu ${
+                activeIndexCat === mcat.MainCategory_Id ? "active" : ""
+              }`}
+            >
+              <div className="d-flex align-items-center">
+                <Link
+                  onClick={() => {
+                    setActiveIndexCat(null);
+                    setActiveCategory(false);
+                  }}
+                  to={`/product/${mcat.MainCategory_Id}/0`}
+                  className="text-white text-15 py-12 px-16 flex-align gap-8 rounded-0 flex-grow-1"
+                >
+                  {mcat.MainCategory_Description}
+                </Link>
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleCatClick(mcat.MainCategory_Id);
+                  }}
+                  className={`icon text-md d-flex ms-auto pe-16 w-24 h-24 flex-center ${
+                    activeIndexCat === mcat.MainCategory_Id
+                      ? "rotate-90"
+                      : "rotate-0"
+                  }`}
+                  style={{
+                    transformOrigin: "center center",
+                  }}
+                >
+                  <i className="ph ph-caret-right" />
+                </span>
+              </div>
+              <div
+                className={`submenus-submenu py-16 ${
+                  activeIndexCat === mcat.MainCategory_Id ? "open" : ""
+                }`}
+              >
+                <h6 className="text-lg px-16 submenus-submenu__title">
+                  {mcat.MainCategory_Description}
+                </h6>
+                <ul className="submenus-submenu__list max-h-300 overflow-y-auto scroll-sm">
+                  {mcat.subCategories.map((scat) => (
+                    <li key={scat.Category_Description}>
+                      <Link
+                        onClick={() => setActiveCategory(false)}
+                        to={`/product/${mcat.MainCategory_Id}/${scat.Category_Id}`}
+                      >
+                        {scat.Category_Description}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+          {/* {categorys?.map((mcat) => (
             <li
               key={mcat.MainCategory_Id}
               onClick={() => handleCatClick(mcat.MainCategory_Id)}
@@ -340,7 +413,7 @@ const Header = () => {
                 </ul>
               </div>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
       {/* ==================== Mobile Menu End Here ==================== */}
@@ -457,6 +530,7 @@ const Header = () => {
                     <span className="icon text-2xl d-xs-flex d-none">
                       <i className="ph ph-dots-nine" />
                     </span>
+                    {/* mobile side bar categres menu open */}
                     <span className="d-sm-flex d-none">All</span> Categories
                   </button>
                 </div>
