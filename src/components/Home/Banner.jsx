@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import Image1 from "../../assets/banner/banner-img1.png";
 import Image3 from "../../assets/banner/banner-img3.png";
 import Image4 from "../../assets/banner/snacks.png";
+import Image5 from "../../assets/banner/banner-img44.png";
 import axios from "../../axios";
 
 const Banner = () => {
@@ -121,7 +122,7 @@ const Banner = () => {
                 <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                       Smart Stationery for Workspaces
+                      Smart Stationery for Workspaces
                     </h2>
                     <p className="text-white mb-8">
                       500+ stationery items from top brands. Custom corporate
@@ -191,18 +192,18 @@ const Banner = () => {
                 </div>
 
                 {/* New Slide 2: Eat  */}
-                {/* <div className="banner-item-two">
+                <div className="banner-item-two">
                   <div className="banner-item-two__content">
                     <h2 className="banner-item-two__title bounce text-white">
-                      Office Productivity Starts Here
+                      Xerox-Compatible Toners & Supplies
                     </h2>
                     <p className="text-white mb-8">
-                      From Reynolds pens to 3M sticky notes, we’ve got
-                      everything to power your office’s creativity and
-                      organization.
+                      High-performance toners for all Xerox models. OEM-quality
+                      at competitive prices for uninterrupted office
+                      productivity.
                     </p>
                     <Link
-                      to="/product/10012/0"
+                      to="/product/1/8"
                       className="btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48"
                     >
                       Explore
@@ -212,9 +213,9 @@ const Banner = () => {
                     </Link>
                   </div>
                   <div className="banner-item-two__thumb position-absolute bottom-0">
-                    <img src={Image4} alt="PPE Consumables" />
+                    <img src={Image5} alt="PPE Consumables" />
                   </div>
-                </div> */}
+                </div>
               </Slider>
             </div>
           </div>
