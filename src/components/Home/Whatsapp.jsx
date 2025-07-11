@@ -11,7 +11,7 @@ const Whatsapp = () => {
   return (
     <>
       <FloatingWhatsApp
-        phoneNumber="+919880555222"
+        phoneNumber="+918050222555"
         accountName="NewTech E Office"
         avatar="https://ik.imagekit.io/wxftuzt48/newtech.png?updatedAt=1749644009711"
         chatboxStyle={customChatboxStyle}

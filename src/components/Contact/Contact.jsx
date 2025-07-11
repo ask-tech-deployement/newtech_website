@@ -8,7 +8,14 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
-import { phone1, phone2,landline1,landline2, email, address } from "../../utils";
+import {
+  phone1,
+  phone2,
+  landline1,
+  landline2,
+  email,
+  address,
+} from "../../utils";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -292,7 +299,7 @@ const Contact = () => {
                 style={{ flexWrap: "wrap" }}
               >
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
-                  <i className="ph-fill ph-phone-call" />
+                  <i className="ph-fill ph-whatsapp-logo" />
                 </span>
                 <div
                   className="d-flex gap-10 flex-column"
@@ -310,15 +317,14 @@ const Contact = () => {
                   >
                     {phone2}
                   </a>
-                  
-                </div>                              
+                </div>
               </div>
               <div
                 className="flex-align gap-16 mb-16"
                 style={{ flexWrap: "wrap" }}
-              >                
-                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-success text-2xl flex-shrink-0">
-                  <i className="ph-fill ph-whatsapp-logo" />
+              >
+                <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-success text-2xl flex-shrink-0">
+                  <i className="ph-fill ph-phone-call" />
                 </span>
                 <div
                   className="d-flex gap-10 flex-column"
@@ -336,8 +342,7 @@ const Contact = () => {
                   >
                     {landline2}
                   </a>
-                  
-                </div>               
+                </div>
               </div>
               <div className="flex-align gap-16 mb-16">
                 <span className="w-40 h-40 flex-center rounded-circle border border-gray-100 text-main-two-600 text-2xl flex-shrink-0">
